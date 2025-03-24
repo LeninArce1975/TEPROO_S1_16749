@@ -7,11 +7,13 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 public class V1 extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -44,5 +46,10 @@ public class V1 extends JFrame {
 		JLabel lblNewLabel = new JLabel("Holitas");
 		lblNewLabel.setBounds(77, 62, 45, 13);
 		contentPane.add(lblNewLabel);
+		
+		textField = new JTextField();
+		textField.setBounds(143, 59, 96, 19);
+		contentPane.add(textField);
+		textField.setColumns(10);
 	}
 }
